@@ -1,6 +1,6 @@
 import Navbar from '../components/Navbar/Navbar';
 import Projects from '../components/Projects/Projects';
-import Footer from '../components/Footer/Footer';
+import Footer from '../components/footer/footer';
 import ScrollToTop from '../components/ScrollToTop/ScrollToTop';
 import './projects.css';
 

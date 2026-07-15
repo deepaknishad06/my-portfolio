@@ -8,7 +8,7 @@ import Services from '../components/Services/Services';
 import Timeline from '../components/Timeline/Timeline';
 import GitHub from '../components/GitHub/GitHub';
 import Contact from '../components/Contact/Contact';
-import Footer from '../components/Footer/Footer';
+import Footer from '../components/footer/footer';
 import ScrollToTop from '../components/ScrollToTop/ScrollToTop';
 
 function Home() {
