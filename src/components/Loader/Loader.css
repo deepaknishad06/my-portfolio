@@ -1,0 +1,39 @@
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--bg);
+}
+
+.loader-dot {
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.dot {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: var(--primary);
+    border-radius: 50%;
+}
+
+.dot-1 {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dot-2 {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.dot-3 {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}

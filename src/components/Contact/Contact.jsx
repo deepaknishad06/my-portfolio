@@ -1,0 +1,129 @@
+import { useState } from 'react';
+import { motion } from 'framer-motion';
+import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import './Contact.css';
+
+function Contact() {
+    const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+    const [submitted, setSubmitted] = useState(false);
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData((prev) => ({ ...prev, [name]: value }));
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setSubmitted(true);
+        setTimeout(() => setSubmitted(false), 3000);
+        setFormData({ name: '', email: '', message: '' });
+    };
+
+    return (
+        <section id="contact" className="contact">
+            <div className="contact-container">
+                <motion.h2
+                    className="section-title"
+                    initial={{ opacity: 0, y: -30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                    viewport={{ once: true }}
+                >
+                    Get In Touch
+                </motion.h2>
+
+                <div className="contact-content">
+                    <motion.div
+                        className="contact-info"
+                        initial={{ opacity: 0, x: -50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.6 }}
+                        viewport={{ once: true }}
+                    >
+                        <div className="info-item">
+                            <FaPhone className="info-icon" />
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 XXXXX XXXXX</p>
+                            </div>
+                        </div>
+
+                        <div className="info-item">
+                            <FaEnvelope className="info-icon" />
+                            <div>
+                                <h4>Email</h4>
+                                <p>deepaknishad@email.com</p>
+                            </div>
+                        </div>
+
+                        <div className="info-item">
+                            <FaMapMarkerAlt className="info-icon" />
+                            <div>
+                                <h4>Location</h4>
+                                <p>Your City, Country</p>
+                            </div>
+                        </div>
+
+                        <div className="social-links">
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                                <FaGithub />
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                                <FaLinkedin />
+                            </a>
+                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                                <FaTwitter />
+                            </a>
+                        </div>
+                    </motion.div>
+
+                    <motion.form
+                        className="contact-form"
+                        onSubmit={handleSubmit}
+                        initial={{ opacity: 0, x: 50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.6 }}
+                        viewport={{ once: true }}
+                    >
+                        {submitted && <div className="success-message">Message sent successfully! 🎉</div>}
+
+                        <div className="form-group">
+                            <label htmlFor="name">Name</label>
+                            <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required />
+                        </div>
+
+                        <div className="form-group">
+                            <label htmlFor="email">Email</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                value={formData.email}
+                                onChange={handleChange}
+                                required
+                            />
+                        </div>
+
+                        <div className="form-group">
+                            <label htmlFor="message">Message</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="5"
+                                value={formData.message}
+                                onChange={handleChange}
+                                required
+                            />
+                        </div>
+
+                        <button type="submit" className="submit-btn">
+                            Send Message
+                        </button>
+                    </motion.form>
+                </div>
+            </div>
+        </section>
+    );
+}
+
+export default Contact;

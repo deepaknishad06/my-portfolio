@@ -1,0 +1,40 @@
+.footer {
+    background: rgba(11, 17, 32, 0.8);
+    border-top: 1px solid rgba(59, 130, 246, 0.2);
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    color: var(--muted);
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+}
+
+.heart {
+    display: inline-block;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-content p {
+        font-size: 0.85rem;
+    }
+}
