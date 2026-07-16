@@ -158,4 +158,8 @@
         font-size: 0.9rem;
         padding: 0.6rem 1rem;
     }
+
+    .navbar-actions {
+        display: none;
+    }
 }

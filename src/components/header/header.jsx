@@ -88,24 +88,7 @@ function Header({ activeSection, darkMode, onToggleTheme, onNavigate, navItems }
                             Resume
                         </motion.a>
 
-                        <motion.a
-                            href="mailto:deepak@example.com"
-                            className="action-btn secondary desktop-only"
-                            whileHover={{ y: -2, scale: 1.03 }}
-                            transition={{ type: 'spring', stiffness: 220, damping: 18 }}
-                        >
-                            Hire Me
-                        </motion.a>
-
-                        <motion.button
-                            className="icon-btn"
-                            onClick={onToggleTheme}
-                            aria-label="Toggle dark mode"
-                            whileHover={{ rotate: -8, scale: 1.04 }}
-                            transition={{ type: 'spring', stiffness: 220, damping: 18 }}
-                        >
-                            {darkMode ? <FaSun /> : <FaMoon />}
-                        </motion.button>
+                       
 
                         <motion.a
                             href="https://github.com/deepaknishad06"
