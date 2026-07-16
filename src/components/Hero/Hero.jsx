@@ -36,7 +36,7 @@ function Hero() {
                     />
 
                     <div className="hero-buttons">
-                        <a href="/src/assets/resume/Deepak_Nishad_Resume.pdf" download className="btn btn-primary">
+                        <a href={myResume} download className="btn btn-primary">
                             Download Resume
                         </a>
                         <a href="#projects" className="btn btn-secondary">

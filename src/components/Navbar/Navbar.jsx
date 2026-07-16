@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FaBars, FaTimes, FaDownload } from 'react-icons/fa';
+import myResume from "../../assets/resume/my-Resume.pdf";
 import './Navbar.css';
 
 function Navbar() {
@@ -49,7 +50,7 @@ function Navbar() {
                 </div>
 
                 <div className="navbar-actions">
-                    <a href="/src/assets/resume/Deepak_Nishad_Resume.pdf" download className="btn-resume">
+                    <a href={myResume} download className="btn-resume">
                         <FaDownload /> Resume
                     </a>
                     <button className="hamburger" onClick={toggleMenu}>
