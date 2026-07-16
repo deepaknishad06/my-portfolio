@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import './Projects.css';
-import hospitalProject from "../assets/images/hospital-project.png";
-import portfolioProject from "../assets/images/portfolio-project.png";
+import hospitalProject from "../../assets/images/hospital-project.png";
+import portfolioProject from "../../assets/images/portfolio-project.png";
 
 function Projects() {
     const projects = [
