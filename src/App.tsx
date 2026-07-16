@@ -11,7 +11,7 @@ const navItems = [
   { id: 'projects', label: 'Projects' },
   { id: 'skills', label: 'Skills' },
   { id: 'experience', label: 'Experience' },
-  { id: 'github', label: 'GitHub', href: 'https://github.com' },
+  { id: 'github', label: 'GitHub', href: 'https://github.com/deepaknishad06' },
   { id: 'contact', label: 'Contact' },
 ];
 

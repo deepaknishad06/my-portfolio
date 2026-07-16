@@ -65,10 +65,10 @@ function Contact() {
                         </div>
 
                         <div className="social-links">
-                            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                            <a href="https://github.com/deepaknishad06" target="_blank" rel="noopener noreferrer">
                                 <FaGithub />
                             </a>
-                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                            <a href="www.linkedin.com/in/deepak-nishad-2423b8354" target="_blank" rel="noopener noreferrer">
                                 <FaLinkedin />
                             </a>
                             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">

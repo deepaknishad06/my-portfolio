@@ -45,15 +45,15 @@ function Hero() {
                     </div>
 
                     <div className="hero-socials">
-                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+                        <a href="https://github.com/deepaknishad06" target="_blank" rel="noopener noreferrer" className="social-icon">
                             <FaGithub />
                         </a>
-                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+                        <a href="www.linkedin.com/in/deepak-nishad-2423b8354" target="_blank" rel="noopener noreferrer" className="social-icon">
                             <FaLinkedin />
                         </a>
-                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+                        {/* <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-icon">
                             <FaTwitter />
-                        </a>
+                        </a> */}
                     </div>
                 </motion.div>
 

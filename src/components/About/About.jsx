@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import profileImage from '../../assets/images/me.jpg';
 import './About.css';
 
 function About() {
@@ -23,7 +24,7 @@ function About() {
                         transition={{ duration: 0.6 }}
                         viewport={{ once: true }}
                     >
-                        <img src="/src/assets/images/me.jpg" alt="Deepak Nishad" />
+                        <img src={profileImage} alt="Deepak Nishad" />
                     </motion.div>
 
                     <motion.div

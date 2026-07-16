@@ -52,7 +52,7 @@ function GitHub() {
                             </div>
                         </div>
 
-                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="github-btn">
+                        <a href="https://github.com/deepaknishad06" target="_blank" rel="noopener noreferrer" className="github-btn">
                             Visit GitHub
                         </a>
                     </motion.div>

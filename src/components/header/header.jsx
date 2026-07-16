@@ -108,7 +108,7 @@ function Header({ activeSection, darkMode, onToggleTheme, onNavigate, navItems }
                         </motion.button>
 
                         <motion.a
-                            href="https://github.com"
+                            href="https://github.com/deepaknishad06"
                             className="social-link"
                             target="_blank"
                             rel="noreferrer"
@@ -120,7 +120,7 @@ function Header({ activeSection, darkMode, onToggleTheme, onNavigate, navItems }
                         </motion.a>
 
                         <motion.a
-                            href="https://linkedin.com"
+                            href="www.linkedin.com/in/deepak-nishad-2423b8354"
                             className="social-link"
                             target="_blank"
                             rel="noreferrer"

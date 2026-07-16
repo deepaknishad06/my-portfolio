@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { FaHtml5, FaCss3, FaJs, FaReact, FaNode, FaGitAlt, FaGithub, FaDatabase } from 'react-icons/fa';
 import { SiExpress, SiMongodb, SiVite } from 'react-icons/si';
+import { BsBootstrap } from "react-icons/bs";
 import './TechStack.css';
 
 function TechStack() {
@@ -8,6 +9,7 @@ function TechStack() {
         { icon: FaHtml5, name: 'HTML', color: '#E34C26' },
         { icon: FaCss3, name: 'CSS', color: '#1572B6' },
         { icon: FaJs, name: 'JavaScript', color: '#F7DF1E' },
+        { icon: BsBootstrap, name: 'Bootstrap', color: '#563D7C' },
         { icon: FaReact, name: 'React', color: '#61DAFB' },
         { icon: FaNode, name: 'Node.js', color: '#68A063' },
         { icon: SiExpress, name: 'Express', color: '#90C53F' },

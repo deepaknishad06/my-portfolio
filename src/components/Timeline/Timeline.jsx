@@ -6,11 +6,11 @@ function Timeline() {
         { year: '2023', title: 'Started BCA', icon: '🎓' },
         { year: '2023', title: 'Learned HTML & CSS', icon: '🎨' },
         { year: '2024', title: 'Mastered JavaScript', icon: '⚡' },
-        { year: '2024', title: 'Dove into React', icon: '⚛️' },
-        { year: '2024', title: 'Built with Node.js', icon: '🖥️' },
+        { year: '2024', title: 'Started React Development', icon: '⚛️' },
+        { year: '2024', title: 'Learned Node.js & Express.js', icon: '🖥️' },
         { year: '2024', title: 'Worked with MongoDB', icon: '📊' },
-        { year: '2025', title: 'Hospital Project', icon: '🏥' },
-        { year: '2025', title: 'Looking for Internship', icon: '🚀' },
+        { year: '2025', title: 'Started MERN Stack Internship', icon: '🏥' },
+        { year: '2025', title: 'Open to Full-Stack Developer Opportunities', icon: '🚀' },
     ];
 
     return (
