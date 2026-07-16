@@ -44,7 +44,7 @@ function Contact() {
                             <FaPhone className="info-icon" />
                             <div>
                                 <h4>Phone</h4>
-                                <p>+91 XXXXX XXXXX</p>
+                                <p>+91 86993 58629</p>
                             </div>
                         </div>
 
@@ -52,7 +52,7 @@ function Contact() {
                             <FaEnvelope className="info-icon" />
                             <div>
                                 <h4>Email</h4>
-                                <p>deepaknishad@email.com</p>
+                                <p>dcreation2706@gmail.com</p>
                             </div>
                         </div>
 
@@ -60,7 +60,7 @@ function Contact() {
                             <FaMapMarkerAlt className="info-icon" />
                             <div>
                                 <h4>Location</h4>
-                                <p>Your City, Country</p>
+                                <p>Ludhiana,Punjab</p>
                             </div>
                         </div>
 
@@ -70,9 +70,6 @@ function Contact() {
                             </a>
                             <a href="www.linkedin.com/in/deepak-nishad-2423b8354" target="_blank" rel="noopener noreferrer">
                                 <FaLinkedin />
-                            </a>
-                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                                <FaTwitter />
                             </a>
                         </div>
                     </motion.div>

@@ -39,16 +39,13 @@ function About() {
                             building responsive, user-friendly web applications.
                         </p>
                         <p>
-                            I love turning ideas into beautiful, functional digital experiences. With a strong foundation in React,
-                            Node.js, and MongoDB, I'm always learning new technologies and best practices.
-                        </p>
+                            I’m a MERN Stack Developer passionate about building modern, responsive, and user-friendly web applications. I enjoy turning ideas into real-world projects using React, Node.js, Express.js, and MongoDB while continuously improving my skills and exploring new technologies.</p>
                         <p>
                             When I'm not coding, you'll find me exploring open-source projects, contributing to the community, and
                             tackling interesting problems that push my skills forward.
                         </p>
                         <p>
-                            I'm looking for internship opportunities where I can apply my knowledge and grow as a developer.
-                        </p>
+I'm actively seeking internship opportunities where I can apply my skills, contribute to real-world projects, and continue growing as a MERN Stack Developer. </p>
 
                         <div className="about-highlights">
                             <div className="highlight-item">
@@ -65,7 +62,7 @@ function About() {
                             </div>
                             <div className="highlight-item">
                                 <span className="icon">🌱</span>
-                                <p>Open Source</p>
+                                <p>Quick Learner</p>
                             </div>
                         </div>
                     </motion.div>

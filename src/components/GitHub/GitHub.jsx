@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FaGithub, FaCode, FaStar, FaUsers } from 'react-icons/fa';
+import { FaFolderOpen, FaCode, FaLaptopCode } from "react-icons/fa";
 import './GitHub.css';
 
 function GitHub() {
@@ -26,28 +26,28 @@ function GitHub() {
                     >
                         <FaGithub className="github-icon" />
                         <h3>DeepakNishad</h3>
-                        <p>MERN Stack Developer | Open Source Contributor</p>
+                        <p>MERN Stack Developer | React Enthusiast</p>
 
                         <div className="github-stats">
                             <div className="stat">
-                                <FaCode />
+                                <FaFolderOpen />
                                 <div>
-                                    <span>20+</span>
+                                    <span>3+</span>
                                     <p>Projects</p>
                                 </div>
                             </div>
                             <div className="stat">
-                                <FaStar />
+                                <FaCode />
                                 <div>
-                                    <span>35+</span>
-                                    <p>Repositories</p>
+                                    <span>10+</span>
+                                    <p>Technologies</p>
                                 </div>
                             </div>
                             <div className="stat">
-                                <FaUsers />
+                                <FaLaptopCode />
                                 <div>
-                                    <span>50+</span>
-                                    <p>Followers</p>
+                                    <span>2023</span>
+                                    <p>2023</p>
                                 </div>
                             </div>
                         </div>
