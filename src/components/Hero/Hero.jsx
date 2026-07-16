@@ -3,6 +3,7 @@ import { FaGithub, FaLinkedin, FaTwitter, FaReact, FaNodeJs } from 'react-icons/
 import { SiMongodb } from 'react-icons/si';
 import { TypeAnimation } from 'react-type-animation';
 import './Hero.css';
+import myResume from "../../assets/resume/my-Resume.pdf";
 import profileImage from '../../assets/images/me.jpg';
 
 function Hero() {
