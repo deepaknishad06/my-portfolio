@@ -3,6 +3,7 @@ import { FaGithub, FaLinkedin, FaTwitter, FaReact, FaNodeJs } from 'react-icons/
 import { SiMongodb } from 'react-icons/si';
 import { TypeAnimation } from 'react-type-animation';
 import './Hero.css';
+import profileImage from '../../assets/images/me.jpg';
 
 function Hero() {
     return (
@@ -63,7 +64,7 @@ function Hero() {
                     transition={{ duration: 0.8 }}
                 >
                     <div className="profile-frame">
-                        <img src="/src/assets/images/me.jpg" alt="Deepak Nishad" className="profile-img" />
+                        <img src={profileImage} alt="Deepak Nishad" className="profile-img" />
                         <div className="profile-glow"></div>
                     </div>
                     <div className="floating-icons desktop-icons">

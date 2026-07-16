@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import './Projects.css';
+import hospitalProject from "../assets/images/hospital-project.png";
+import portfolioProject from "../assets/images/portfolio-project.png";
 
 function Projects() {
     const projects = [
@@ -9,7 +11,7 @@ function Projects() {
             title: 'Hospital Appointment System',
             description: 'A full-stack appointment booking system with user authentication, real-time updates, and email notifications.',
             tech: ['React', 'Express', 'MongoDB', 'JWT', 'Cloudinary'],
-            image: '/src/assets/images/hospital-project.png',
+            image: hospitalProject,
             github: 'https://github.com/deepaknishad06/hospital-appointment-system',
             live: 'https://hospital-appointment-system-phi.vercel.app/',
         },
@@ -18,7 +20,7 @@ function Projects() {
             title: 'Personal Portfolio',
             description: 'A modern, responsive portfolio website showcasing projects and skills with smooth animations.',
             tech: ['React', 'Framer Motion', 'CSS', 'Vite'],
-            image: '/src/assets/images/portfolio-project.png',
+            image: portfolioProject,
             github: 'https://github.com',
             live: 'https://my-portfolio-phi.vercel.app/',
         },
