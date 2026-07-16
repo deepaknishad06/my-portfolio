@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { FaFolderOpen, FaCode, FaLaptopCode } from "react-icons/fa";
+import { FaGithub} from 'react-icons/fa';
 import './GitHub.css';
 
 function GitHub() {
