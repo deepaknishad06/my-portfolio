@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { FaFolderOpen, FaCode, FaLaptopCode } from "react-icons/fa";
-import { FaGithub} from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
 import './GitHub.css';
 
 function GitHub() {
@@ -48,7 +48,7 @@ function GitHub() {
                                 <FaLaptopCode />
                                 <div>
                                     <span>2023</span>
-                                    <p>2023</p>
+                                    <p>Learning Journey</p>
                                 </div>
                             </div>
                         </div>

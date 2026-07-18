@@ -12,7 +12,7 @@ function Projects() {
             description: 'A full-stack appointment booking system with user authentication, real-time updates, and email notifications.',
             tech: ['React', 'Express', 'MongoDB', 'JWT', 'Cloudinary'],
             image: hospitalProject,
-            github: 'https://github.com/deepaknishad06/deepaknishad06/hospital-appointment-system',
+            github: 'https://github.com/deepaknishad06/hospital-appointment-system',
             live: 'https://hospital-appointment-system-phi.vercel.app/',
         },
         {
@@ -21,7 +21,7 @@ function Projects() {
             description: 'A modern, responsive portfolio website showcasing projects and skills with smooth animations.',
             tech: ['React', 'Framer Motion', 'CSS', 'Vite'],
             image: portfolioProject,
-            github: 'https://github.com/deepaknishad06',
+            github: 'https://github.com/deepaknishad06/my-portfolio',
             live: 'https://my-portfolio27-git-main-deep2706.vercel.app/',
         },
     ];

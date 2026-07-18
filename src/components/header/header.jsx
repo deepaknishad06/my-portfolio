@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
-import { FaBars, FaDownload, FaGithub, FaLinkedin, FaMoon, FaSun, FaTimes } from 'react-icons/fa';
+import { FaBars, FaDownload, FaTimes } from 'react-icons/fa';
 import './header.css';
 
 function Header({ activeSection, darkMode, onToggleTheme, onNavigate, navItems }) {
@@ -47,7 +47,7 @@ function Header({ activeSection, darkMode, onToggleTheme, onNavigate, navItems }
                         </div>
                     </motion.a>
 
-                    {/* <nav className="nav-links" aria-label="Primary navigation">
+                    <nav className="nav-links" aria-label="Primary navigation">
                         {navItems.map((item) => {
                             const isActive = item.id === activeSection;
                             const isExternal = Boolean(item.href);
@@ -71,7 +71,7 @@ function Header({ activeSection, darkMode, onToggleTheme, onNavigate, navItems }
                                 </motion.a>
                             );
                         })}
-                    </nav> */}
+                    </nav>
 
                     <div className="header-actions">
                         <motion.a
@@ -88,31 +88,8 @@ function Header({ activeSection, darkMode, onToggleTheme, onNavigate, navItems }
                             Resume
                         </motion.a>
 
-                       
 
-                        <motion.a
-                            href="https://github.com/deepaknishad06"
-                            className="social-link"
-                            target="_blank"
-                            rel="noreferrer"
-                            aria-label="GitHub"
-                            whileHover={{ rotate: 6, scale: 1.06 }}
-                            transition={{ type: 'spring', stiffness: 220, damping: 18 }}
-                        >
-                            <FaGithub />
-                        </motion.a>
 
-                        <motion.a
-                            href="www.linkedin.com/in/deepak-nishad-2423b8354"
-                            className="social-link"
-                            target="_blank"
-                            rel="noreferrer"
-                            aria-label="LinkedIn"
-                            whileHover={{ rotate: -6, scale: 1.06 }}
-                            transition={{ type: 'spring', stiffness: 220, damping: 18 }}
-                        >
-                            <FaLinkedin />
-                        </motion.a>
 
                         <motion.button
                             className="icon-btn mobile-toggle"
@@ -173,9 +150,6 @@ function Header({ activeSection, darkMode, onToggleTheme, onNavigate, navItems }
                 <div className="header-actions" style={{ justifyContent: 'flex-start', flexWrap: 'wrap' }}>
                     <a href="#contact" className="action-btn" onClick={(event) => { event.preventDefault(); closeMenu(); onNavigate('contact'); }}>
                         Resume
-                    </a>
-                    <a href="mailto:deepak@example.com" className="action-btn secondary" onClick={closeMenu}>
-                        Hire Me
                     </a>
                 </div>
             </motion.aside>
