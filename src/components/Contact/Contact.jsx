@@ -6,17 +6,40 @@ import './Contact.css';
 function Contact() {
     const [formData, setFormData] = useState({ name: '', email: '', message: '' });
     const [submitted, setSubmitted] = useState(false);
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState(null);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData((prev) => ({ ...prev, [name]: value }));
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        setSubmitted(true);
-        setTimeout(() => setSubmitted(false), 3000);
-        setFormData({ name: '', email: '', message: '' });
+        setError(null);
+        setLoading(true);
+
+        try {
+            const res = await fetch("http://localhost:5000/api/contact", {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData),
+            });
+
+            if (!res.ok) {
+                const errText = await res.text();
+                throw new Error(errText || res.statusText || 'Request failed');
+            }
+
+            setSubmitted(true);
+            setFormData({ name: '', email: '', message: '' });
+            setTimeout(() => setSubmitted(false), 3000);
+        } catch (err) {
+            setError(err.message || 'Something went wrong');
+            setTimeout(() => setError(null), 5000);
+        } finally {
+            setLoading(false);
+        }
     };
 
     return (
@@ -83,6 +106,7 @@ function Contact() {
                         viewport={{ once: true }}
                     >
                         {submitted && <div className="success-message">Message sent successfully! 🎉</div>}
+                        {error && <div className="error-message">{error}</div>}
 
                         <div className="form-group">
                             <label htmlFor="name">Name</label>
@@ -113,8 +137,8 @@ function Contact() {
                             />
                         </div>
 
-                        <button type="submit" className="submit-btn">
-                            Send Message
+                        <button type="submit" className="submit-btn" disabled={loading}>
+                            {loading ? 'Sending...' : 'Send Message'}
                         </button>
                     </motion.form>
                 </div>
