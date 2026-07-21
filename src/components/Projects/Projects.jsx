@@ -13,7 +13,7 @@ function Projects() {
             tech: ['React', 'Express', 'MongoDB', 'JWT', 'Cloudinary'],
             image: hospitalProject,
             github: 'https://github.com/deepaknishad06/hospital-appointment-system',
-            live: 'https://hospital-appointment-system-1-6c9y.onrender.com',
+            live: 'https://hospital-appointment-system-sooty.vercel.app/',
         },
         {
             id: 2,
